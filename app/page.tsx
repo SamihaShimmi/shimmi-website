@@ -20,7 +20,7 @@ const newsHighlights = [
   {
     date: "May 2025",
     description:
-      "Paper titled “Enhanced Detection of Code Vulnerability with Synergy Between Data-Driven, Rule-Based, and Unsupervised Learnings” published at EnCyCriS @ ICSE 2025.",
+      "Paper titled “Enhanced Detection of Code Vulnerability with Synergy Between Data-Driven, Rule-Based, and Unsupervised Learnings” was published at EnCyCriS @ ICSE 2025.",
   },
 ];
 
