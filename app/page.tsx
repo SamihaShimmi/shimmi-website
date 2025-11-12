@@ -2,11 +2,6 @@ import Image from "next/image";
 import { socialLinks } from "./lib/config";
 
 const newsHighlights = [
-  // {
-  //   date: "Nov 2025",
-  //   description:
-  //     "Presented the poster “Process-Based Predictors of Vulnerability Re-Introductions” at Supercomputing 2025 in St. Louis.",
-  // },
   {
     date: "Aug 2025",
     description:
