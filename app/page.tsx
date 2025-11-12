@@ -10,7 +10,7 @@ const newsHighlights = [
   {
     date: "July 2025",
     description:
-      "Presented “Predicting Future Cyber Attacks in Software by Identifying Attack-Defense Co-evolution Patterns” at the ALCF student poster session (Argonne).",
+      "Presented “Predicting Future Cyber Attacks in Software by Identifying Attack-Defense Co-evolution Patterns” at the ALCF Student Poster Session, Argonne National Laboratory"
   },
   {
     date: "Summer 2025",
