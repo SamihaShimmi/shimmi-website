@@ -3,7 +3,12 @@ import { socialLinks } from "./lib/config";
 
 const newsHighlights = [
   {
-    date: "Aug 2025",
+    date: "July 2025",
+    description:
+      "Delivered an invited talk titled “From Detection to Prediction: Multi-Dimensional Embedding Similarity for Software Security” at the CS seminar series, Mathematics and Computer Science division, Argonne National Laboratory"
+  },
+  {
+    date: "July 2025",
     description:
       "Presented “Predicting Future Cyber Attacks in Software by Identifying Attack-Defense Co-evolution Patterns” at the ALCF student poster session (Argonne).",
   },
