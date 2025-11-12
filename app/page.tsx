@@ -25,8 +25,21 @@ const newsHighlights = [
   {
     date: "May 2025",
     description:
-      "Paper titled “Enhanced Detection of Code Vulnerability with Synergy Between Data-Driven, Rule-Based, and Unsupervised Learnings” was published at EnCyCriS @ ICSE 2025.",
+      "Paper titled \"Enhanced Detection of Code Vulnerability with Synergy Between Data-Driven, Rule-Based, and Unsupervised Learnings\" was published at EnCyCriS @ ICSE 2025.",
+    link: "https://ieeexplore.ieee.org/document/11029526/",
   },
+  {
+    date: "December 2024",
+    description:
+      "Paper titled “Software Vulnerability Detection Using LLM: Does Additional Information Help?” was presented at WAITI 2024 @ ACSAC 2024.",
+    link: "https://ieeexplore.ieee.org/document/10917361/",
+  },
+  {
+    date: "August 2024",
+    description:
+      "Paper titled “VulSim: Leveraging similarity of Multi-Dimensional neighbor embeddings for vulnerability detection” was published in the 33rd USENIX Security Symposium (USENIX 2024).",
+    link: "https://www.usenix.org/system/files/usenixsecurity24-shimmi.pdf",
+  }
 ];
 
 export default function Page() {
@@ -129,9 +142,20 @@ export default function Page() {
               <span className="text-sm font-semibold text-slate-600 dark:text-slate-400 w-28 shrink-0">
                 {item.date}
               </span>
-              <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-                {item.description}
-              </p>
+              {item.link ? (
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-blue-600 dark:text-blue-400 leading-relaxed hover:underline"
+                >
+                  {item.description}
+                </a>
+              ) : (
+                <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+                  {item.description}
+                </p>
+              )}
             </div>
           ))}
         </div>
