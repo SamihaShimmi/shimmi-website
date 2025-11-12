@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { socialLinks } from "./lib/config";
+import { ObfuscatedEmail } from "./components/obfuscated-email";
 
 const newsHighlights = [
   {
@@ -60,12 +61,10 @@ export default function Page() {
                 <span className="font-semibold text-slate-800 dark:text-slate-100">
                   Email:
                 </span>
-                <a
-                  href="mailto:sshimmi@niu.edu"
+                <ObfuscatedEmail
+                  encoded="c3NoaW1taXxuaXUuZWR1"
                   className="text-blue-600 dark:text-blue-400 hover:underline break-all"
-                >
-                  sshimmi@niu.edu
-                </a>
+                />
               </div>
               <div className="flex flex-wrap gap-2">
                 <span className="font-semibold text-slate-800 dark:text-slate-100">
