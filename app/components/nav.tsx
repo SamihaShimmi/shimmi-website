@@ -7,6 +7,7 @@ const navItems = {
   "/publications": { name: "Publications", icon: "📚" },
   // "/projects": { name: "Projects", icon: "💻" },
   "/cv": { name: "CV", icon: "📄" },
+  "/talks": { name: "Talks", icon: "🎤" },
   // "/blog": { name: "Blog", icon: "✍️" },
 };
 
