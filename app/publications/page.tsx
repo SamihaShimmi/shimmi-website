@@ -35,6 +35,7 @@ const publications: Publication[] = [
     year: 2025,
     type: "conference",
     status: "published",
+    pdf: "https://ieeexplore.ieee.org/document/11029526/",
     abstract: "This work explores the synergy between different learning approaches to enhance code vulnerability detection capabilities."
   },
   {
@@ -44,6 +45,7 @@ const publications: Publication[] = [
     year: 2024,
     type: "conference",
     status: "published",
+    pdf: "https://ieeexplore.ieee.org/document/10917361/",
     abstract: "This study investigates the effectiveness of providing additional context information to large language models for software vulnerability detection tasks."
   },
   {
@@ -53,6 +55,7 @@ const publications: Publication[] = [
     year: 2024,
     type: "conference",
     status: "published",
+    pdf: "https://www.usenix.org/system/files/usenixsecurity24-shimmi.pdf",
     abstract: "VulSim introduces a novel approach to vulnerability detection by leveraging multi-dimensional neighbor embeddings to identify similar vulnerability patterns in software code."
   },
   {
@@ -62,6 +65,7 @@ const publications: Publication[] = [
     year: 2024,
     type: "journal",
     status: "published",
+    pdf: "https://www.ej-compute.org/index.php/compute/article/view/124",
     abstract: "This research investigates the relationship between different types of code changes and continuous integration build failures in software repositories."
   },
   {
@@ -71,6 +75,7 @@ const publications: Publication[] = [
     year: 2022,
     type: "conference",
     status: "published",
+    pdf: "https://dl.acm.org/doi/abs/10.1145/3549035.3561181",
     abstract: "This work presents a methodology for analyzing software repositories to identify patterns in the co-evolution of attacks and defenses."
   },
   {
@@ -80,6 +85,7 @@ const publications: Publication[] = [
     year: 2022,
     type: "conference",
     status: "published",
+    pdf: "https://dl.acm.org/doi/pdf/10.1145/3524481.3527222?casa_token=30tQ_RhZYsQAAAAA:wFOFzZ3r4f1juROkC1F_nfHerAEmT4ptsdJbMMA6WoM6V4p87GNup5veVLL0UOvH_PCtWy4pTYT8JA",
     abstract: "This research explores how co-evolution patterns between code and tests can be leveraged to automatically recommend relevant test cases."
   },
   {
@@ -89,6 +95,7 @@ const publications: Publication[] = [
     year: 2022,
     type: "conference",
     status: "published",
+    pdf: "https://www.computer.org/csdl/proceedings-article/icst/2022/667900a116/1E2wAm23M88",
     abstract: "This study identifies patterns in how code and test suites co-evolve over time and proposes automated approaches for test suite maintenance."
   },
   {
@@ -98,6 +105,7 @@ const publications: Publication[] = [
     year: 2020,
     type: "conference",
     status: "published",
+    pdf: "https://www.researchgate.net/profile/Gokila-Dorai/publication/341909154_Analysis_of_iOS_SQLite_Schema_Evolution_for_Updating_Forensic_Data_Extraction_Tools/links/6202f7950213d228780653aa/Analysis-of-iOS-SQLite-Schema-Evolution-for-Updating-Forensic-Data-Extraction-Tools.pdf",
     abstract: "This research analyzes the evolution of iOS SQLite schemas and provides insights for updating digital forensic data extraction tools."
   }
 ];

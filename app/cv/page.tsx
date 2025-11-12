@@ -101,56 +101,64 @@ const publications = [
     authors: ["Hibah Mohammed Ghouse", "Samiha Shimmi", "Mona Rahimi"],
     venue: "Proceedings of the 6th International Workshop on Engineering and Cybersecurity of Critical Systems (EnCyCriS) @ ICSE 2025",
     year: 2025,
-    type: "publication"
+    type: "publication",
+    pdf: "https://ieeexplore.ieee.org/document/11029526/"
   },
   {
     title: "Software Vulnerability Detection Using LLM: Does Additional Information Help?",
     authors: ["Samiha Shimmi", "Yash Saini", "Mark Schaefer", "Hamed Okhravi", "Mona Rahimi"],
     venue: "Workshop on AI for Cyber Threat Intelligence (WAITI 2024) @ ACSAC 2024",
     year: 2024,
-    type: "workshop"
+    type: "workshop",
+    pdf: "https://ieeexplore.ieee.org/document/10917361/"
   },
   {
     title: "VulSim: Leveraging similarity of Multi-Dimensional neighbor embeddings for vulnerability detection",
     authors: ["Samiha Shimmi", "Ashiqur Rahman", "Mohan Gadde", "Hamed Okhravi", "Mona Rahimi"],
     venue: "33rd USENIX Security Symposium (USENIX 2024)",
     year: 2024,
-    type: "conference"
+    type: "conference",
+    pdf: "https://www.usenix.org/system/files/usenixsecurity24-shimmi.pdf"
   },
   {
     title: "On Association of Code Change Types and CI Build Failures in Software Repositories",
     authors: ["Samiha Shimmi", "Mona Rahimi"],
     venue: "European Journal of Information Technologies and Computer Science (Ej-Compute 2024)",
     year: 2024,
-    type: "journal"
+    type: "journal",
+    pdf: "https://www.ej-compute.org/index.php/compute/article/view/124"
   },
   {
     title: "Software Repositories for Patternizing Attack-and-Defense Co-Evolution",
     authors: ["Samiha Shimmi", "Mona Rahimi"],
     venue: "MSR4P&S, 1st International Workshop @ ESEC/FSE 2022",
     year: 2022,
-    type: "workshop"
+    type: "workshop",
+    pdf: "https://dl.acm.org/doi/abs/10.1145/3549035.3561181"
   },
   {
     title: "Leveraging Code-Test Co-evolution Patterns for Automated Test Case Recommendation",
     authors: ["Samiha Shimmi", "Mona Rahimi"],
     venue: "3rd ACM/IEEE International Conference on Automation of Software Test (AST 2022)",
     year: 2022,
-    type: "conference"
+    type: "conference",
+    pdf: "https://dl.acm.org/doi/pdf/10.1145/3524481.3527222?casa_token=30tQ_RhZYsQAAAAA:wFOFzZ3r4f1juROkC1F_nfHerAEmT4ptsdJbMMA6WoM6V4p87GNup5veVLL0UOvH_PCtWy4pTYT8JA"
   },
   {
     title: "Patterns of Code-to-Test Coevolution for Automated Test Suite Maintenance",
     authors: ["Samiha Shimmi", "Mona Rahimi"],
     venue: "IEEE International Conference on Software Testing (ICST 2022)",
     year: 2022,
-    type: "conference"
+    type: "conference",
+    pdf: "https://www.computer.org/csdl/proceedings-article/icst/2022/667900a116/1E2wAm23M88"
   },
   {
     title: "Analysis of iOS SQLite Schema Evolution for Updating Forensic Data Extraction Tools",
     authors: ["Samiha S. Shimmi", "Gokila Dorai", "Umit Karabiyik", "Sudhir Aggarwal"],
     venue: "International Symposium on Digital Forensics and Security (ISDFS 2020)",
     year: 2020,
-    type: "conference"
+    type: "conference",
+    pdf: "https://www.researchgate.net/profile/Gokila-Dorai/publication/341909154_Analysis_of_iOS_SQLite_Schema_Evolution_for_Updating_Forensic_Data_Extraction_Tools/links/6202f7950213d228780653aa/Analysis-of-iOS-SQLite-Schema-Evolution-for-Updating-Forensic-Data-Extraction-Tools.pdf"
   }
 ];
 
@@ -394,16 +402,28 @@ export default function CV() {
                   {pub.type}
                 </span>
               )}
-              {pub.arxiv && (
-                <a
-                  href={pub.arxiv}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block text-xs text-blue-600 dark:text-blue-400 hover:underline"
-                >
-                  arXiv
-                </a>
-              )}
+              <div className="flex gap-2 mt-2">
+                {pub.arxiv && (
+                  <a
+                    href={pub.arxiv}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-xs text-blue-600 dark:text-blue-400 hover:underline"
+                  >
+                    arXiv
+                  </a>
+                )}
+                {pub.pdf && (
+                  <a
+                    href={pub.pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-xs text-blue-600 dark:text-blue-400 hover:underline"
+                  >
+                    PDF
+                  </a>
+                )}
+              </div>
             </div>
           ))}
         </div>
