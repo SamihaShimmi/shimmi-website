@@ -4,68 +4,49 @@ import { ImageGrid } from "app/components/image-grid";
 
 export const metadata: Metadata = {
   title: "Photos",
-  description: "My Photos",
+  description: "Photo gallery",
 };
 
 export default function Photos() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-medium">Photos</h1>
+      <h1 className="mb-8 text-2xl font-medium">Photo Gallery</h1>
+      <p className="mb-6 text-sm text-slate-600 dark:text-slate-400">
+        A collection of photos and memories.
+      </p>
       <ImageGrid
         columns={3}
         images={[
           {
-            src: "/photos/photo1.jpg",
-            alt: "Roman columns",
-            href: "https://unsplash.com/photos/people-walking-near-building-during-daytime-dFLBDQQeffU?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash",
+            src: "/photos/ANLPoster.jfif",
+            alt: "ALCF Student Poster Session",
+            caption: "Presented 'Predicting Future Cyber Attacks in Software by Identifying Attack-Defense Co-evolution Patterns' at the ALCF Student Poster Session, Argonne National Laboratory, July 2025, while working as a student intern during the Summer",
           },
           {
-            src: "/photos/photo2.jpg",
-            alt: "Big Ben",
-            href: "https://unsplash.com/photos/big-ben-london-MdJq0zFUwrw?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash",
+            src: "/photos/candidacy.jfif",
+            alt: "Ph.D. Candidacy Defense",
+            caption: "Ph.D. Candidacy Defense: Presented 'Predicting Future Cyber Attacks in Software by Identifying Attack-Defense Co-evolution Patterns', November 2024",
           },
           {
-            src: "/photos/photo3.jpg",
-            alt: "Sacré-Cœur Basilica",
-            href: "https://unsplash.com/photos/a-view-of-the-inside-of-a-building-through-a-circular-window-Tp-3hrx88J4",
+            src: "/photos/Usenix.jfif",
+            alt: "USENIX Security 2024",
+            caption: "Presented 'VulSim: Leveraging similarity of Multi-Dimensional neighbor embeddings for vulnerability detection' at the 33rd USENIX Security Symposium (USENIX 2024), Philadelphia, PA, August 2024",
           },
           {
-            src: "/photos/photo4.jpg",
-            alt: "Eiffel Tower",
-            href: "https://unsplash.com/photos/the-eiffel-tower-towering-over-the-city-of-paris-OgPuPvPsHLM?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash",
+            src: "/photos/ICST.jfif",
+            alt: "ICST 2023",
+            caption: "My first in-person presentation at the ICST 2023 conference, Dublin, Ireland, showcasing my research paper 'Patterns of Code-to-Test Co-evolution for Automated Test Suite Maintenance'",
           },
           {
-            src: "/photos/photo5.jpg",
-            alt: "Taj Mahal",
-            href: "https://unsplash.com/photos/taj-mahal-india-IPlPkWPJ2fo",
+            src: "/photos/atICSE2022PittsburgWithLabmateHamed.jpg",
+            alt: "ICSE 2022",
+            caption: "At ICSE 2022, Pittsburgh, PA, with labmate Hamed",
           },
           {
-            src: "/photos/photo6.jpg",
-            alt: "Colosseum",
-            href: "https://unsplash.com/photos/brown-concrete-building-under-blue-sky-during-daytime-3cyBR1rIJmA?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash",
+            src: "/photos/ASE2022,withProf.jfif",
+            alt: "ASE 2022",
+            caption: "At ASE 2022, October 2022, Oakland Center, Michigan, United States, with my advisor Dr. Mona Rahimi",
           },
-        ]}
-      />
-
-      <ImageGrid
-        columns={2}
-        images={[
-          { src: "/photos/photo1.jpg", alt: "Roman columns" },
-          { src: "/photos/photo2.jpg", alt: "Big Ben" },
-          { src: "/photos/photo3.jpg", alt: "Sacré-Cœur Basilica" },
-          { src: "/photos/photo4.jpg", alt: "Eiffel Tower" },
-        ]}
-      />
-
-      <ImageGrid
-        columns={4}
-        images={[
-          { src: "/photos/photo1.jpg", alt: "Roman columns" },
-          { src: "/photos/photo2.jpg", alt: "Big Ben" },
-          { src: "/photos/photo3.jpg", alt: "Sacré-Cœur Basilica" },
-          { src: "/photos/photo4.jpg", alt: "Eiffel Tower" },
-          { src: "/photos/photo5.jpg", alt: "Taj Mahal" },
-          { src: "/photos/photo6.jpg", alt: "Colosseum" },
         ]}
       />
     </section>

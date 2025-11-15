@@ -6,6 +6,7 @@ interface ImageGridProps {
     src: string;
     alt: string;
     href?: string;
+    caption?: string;
   }[];
   columns?: 2 | 3 | 4; // Accepts 2, 3, or 4 columns
 }
@@ -24,14 +25,25 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
     <section>
       <div className={`grid ${gridClass} gap-4 my-8`}>
         {images.map((image, index) => (
-          <div key={index} className="relative aspect-square">
-            {image.href ? (
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={image.href}
-                className="block w-full h-full"
-              >
+          <div key={index} className="space-y-2">
+            <div className="relative aspect-square">
+              {image.href ? (
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={image.href}
+                  className="block w-full h-full"
+                >
+                  <Image
+                    alt={image.alt}
+                    src={image.src}
+                    fill
+                    sizes="(max-width: 768px) 50vw, 33vw"
+                    priority
+                    className="rounded-lg object-cover"
+                  />
+                </a>
+              ) : (
                 <Image
                   alt={image.alt}
                   src={image.src}
@@ -40,16 +52,12 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
                   priority
                   className="rounded-lg object-cover"
                 />
-              </a>
-            ) : (
-              <Image
-                alt={image.alt}
-                src={image.src}
-                fill
-                sizes="(max-width: 768px) 50vw, 33vw"
-                priority
-                className="rounded-lg object-cover"
-              />
+              )}
+            </div>
+            {image.caption && (
+              <p className="text-sm text-slate-600 dark:text-slate-400 text-center">
+                {image.caption}
+              </p>
             )}
           </div>
         ))}

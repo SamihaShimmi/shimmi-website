@@ -8,6 +8,7 @@ const navItems = {
   // "/projects": { name: "Projects", icon: "💻" },
   "/cv": { name: "CV", icon: "📄" },
   "/talks": { name: "Talks", icon: "🎤" },
+  "/photos": { name: "Photos", icon: "📷" },
   // "/blog": { name: "Blog", icon: "✍️" },
 };
 
