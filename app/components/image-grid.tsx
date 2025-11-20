@@ -46,7 +46,7 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
                       <img
                         alt={image.alt}
                         src={image.src}
-                        className="w-full h-full object-cover rounded-lg"
+                        className="w-full h-full object-contain rounded-lg"
                       />
                     ) : (
                       <Image
@@ -55,7 +55,7 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
                         fill
                         sizes="(max-width: 768px) 50vw, 33vw"
                         priority
-                        className="rounded-lg object-cover"
+                        className="rounded-lg object-contain"
                       />
                     )}
                   </a>
@@ -64,7 +64,7 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
                     <img
                       alt={image.alt}
                       src={image.src}
-                      className="w-full h-full object-cover rounded-lg"
+                      className="w-full h-full object-contain rounded-lg"
                     />
                   ) : (
                     <Image
@@ -73,7 +73,7 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
                       fill
                       sizes="(max-width: 768px) 50vw, 33vw"
                       priority
-                      className="rounded-lg object-cover"
+                      className="rounded-lg object-contain"
                     />
                   )
                 )}

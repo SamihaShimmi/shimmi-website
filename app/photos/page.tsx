@@ -26,6 +26,11 @@ export default function Photos() {
           columns={3}
           images={[
             {
+              src: "/photos/SCPoster.jfif",
+              alt: "Super Computing 2025",
+              caption: "Presented our poster 'Process-Based Predictors of Vulnerability Reintroduction' at SC25 (Super Computing 2025) in St. Louis, a collaborative work between Northern Illinois University and Loyola University Chicago",
+            },
+            {
               src: "/photos/ANLPoster.jfif",
               alt: "ALCF Student Poster Session",
               caption: "Presented 'Predicting Future Cyber Attacks in Software by Identifying Attack-Defense Co-evolution Patterns' at the ALCF Student Poster Session, Argonne National Laboratory, July 2025, while working as a student intern during the Summer",
