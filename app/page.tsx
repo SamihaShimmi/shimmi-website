@@ -4,14 +4,19 @@ import { ObfuscatedEmail } from "./components/obfuscated-email";
 
 const newsHighlights = [
   {
-    date: "July 2025",
+    date: "November 2025",
     description:
-      "Delivered an invited talk titled “From Detection to Prediction: Multi-Dimensional Embedding Similarity for Software Security” at the CS seminar series, Mathematics and Computer Science division, Argonne National Laboratory"
+      "Presented poster \"Process-Based Predictors of Vulnerability Reintroduction\" at SC25 (Super Computing 2025) in St. Louis, a collaborative work between Northern Illinois University and Loyola University Chicago"
   },
   {
     date: "July 2025",
     description:
-      "Presented “Predicting Future Cyber Attacks in Software by Identifying Attack-Defense Co-evolution Patterns” at the ALCF Student Poster Session, Argonne National Laboratory"
+      "Delivered an invited talk titled \"From Detection to Prediction: Multi-Dimensional Embedding Similarity for Software Security\" at the CS seminar series, Mathematics and Computer Science division, Argonne National Laboratory"
+  },
+  {
+    date: "July 2025",
+    description:
+      "Presented \"Predicting Future Cyber Attacks in Software by Identifying Attack-Defense Co-evolution Patterns\" at the ALCF Student Poster Session, Argonne National Laboratory"
   },
   {
     date: "Summer 2025",
@@ -32,13 +37,13 @@ const newsHighlights = [
   {
     date: "December 2024",
     description:
-      "Paper titled “Software Vulnerability Detection Using LLM: Does Additional Information Help?” was presented at WAITI 2024 @ ACSAC 2024.",
+      "Paper titled \"Software Vulnerability Detection Using LLM: Does Additional Information Help?\" was presented at WAITI 2024 @ ACSAC 2024.",
     link: "https://ieeexplore.ieee.org/document/10917361/",
   },
   {
     date: "August 2024",
     description:
-      "Paper titled “VulSim: Leveraging similarity of Multi-Dimensional neighbor embeddings for vulnerability detection” was published in the 33rd USENIX Security Symposium (USENIX 2024).",
+      "Paper titled \"VulSim: Leveraging similarity of Multi-Dimensional neighbor embeddings for vulnerability detection\" was published in the 33rd USENIX Security Symposium (USENIX 2024).",
     link: "https://www.usenix.org/system/files/usenixsecurity24-shimmi.pdf",
   }
 ];
