@@ -89,6 +89,14 @@ const teachingExperience = [
 
 const publications = [
   {
+    title: "Process-based Indicators of Vulnerability Re-Introducing Code Changes: An Exploratory Case Study",
+    authors: ["Samiha Shimmi", "Nicholas M Synovic", "Mona Rahimi", "George K Thiruvathukal"],
+    venue: "arXiv preprint arXiv:2510.26676",
+    year: 2025,
+    type: "preprint",
+    arxiv: "https://arxiv.org/pdf/2510.26676"
+  },
+  {
     title: "AI-Based Software Vulnerability Detection: A Systematic Literature Review",
     authors: ["Samiha Shimmi", "Hamed Okhravi", "Mona Rahimi"],
     venue: "arXiv preprint arXiv:2506.10280",
