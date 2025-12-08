@@ -4,6 +4,11 @@ import { ObfuscatedEmail } from "./components/obfuscated-email";
 
 const newsHighlights = [
   {
+    date: "2025",
+    description:
+      "Paper titled \"Process-based Indicators of Vulnerability Re-Introducing Code Changes: An Exploratory Case Study\" (with Nicholas M. Synovic, Mona Rahimi, and George K. Thiruvathukal) was accepted at The International Workshop on Software Vulnerability Management (SVM) 2026.",
+  },
+  {
     date: "November 2025",
     description:
       "Presented poster \"Process-Based Predictors of Vulnerability Reintroduction\" at SC25 (Super Computing 2025) in St. Louis, a collaborative work between Northern Illinois University and Loyola University Chicago"
