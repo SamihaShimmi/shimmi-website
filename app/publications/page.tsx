@@ -22,10 +22,10 @@ const publications: Publication[] = [
   {
     title: "Process-based Indicators of Vulnerability Re-Introducing Code Changes: An Exploratory Case Study",
     authors: ["Samiha Shimmi", "Nicholas M Synovic", "Mona Rahimi", "George K Thiruvathukal"],
-    venue: "arXiv preprint arXiv:2510.26676",
-    year: 2025,
-    type: "preprint",
-    arxiv: "https://arxiv.org/pdf/2510.26676",
+    venue: "The International Workshop on Software Vulnerability Management (SVM) 2026",
+    year: 2026,
+    type: "workshop",
+    status: "accepted",
     abstract: "This exploratory case study investigates process-based indicators that can help identify code changes that reintroduce vulnerabilities, providing insights into patterns and characteristics of such changes."
   },
   {
@@ -42,7 +42,7 @@ const publications: Publication[] = [
     authors: ["Hibah Mohammed Ghouse", "Samiha Shimmi", "Mona Rahimi"],
     venue: "6th International Workshop on Engineering and Cybersecurity of Critical Systems (EnCyCriS) @ ICSE 2025",
     year: 2025,
-    type: "conference",
+    type: "workshop",
     status: "published",
     pdf: "https://ieeexplore.ieee.org/document/11029526/",
     abstract: "This work explores the synergy between different learning approaches to enhance code vulnerability detection capabilities."
@@ -52,7 +52,7 @@ const publications: Publication[] = [
     authors: ["Samiha Shimmi", "Yash Saini", "Mark Schaefer", "Hamed Okhravi", "Mona Rahimi"],
     venue: "Workshop on AI for Cyber Threat Intelligence (WAITI 2024) @ ACSAC 2024",
     year: 2024,
-    type: "conference",
+    type: "workshop",
     status: "published",
     pdf: "https://ieeexplore.ieee.org/document/10917361/",
     abstract: "This study investigates the effectiveness of providing additional context information to large language models for software vulnerability detection tasks."
@@ -82,7 +82,7 @@ const publications: Publication[] = [
     authors: ["Samiha Shimmi", "Mona Rahimi"],
     venue: "MSR4P&S, 1st International Workshop @ ESEC/FSE 2022",
     year: 2022,
-    type: "conference",
+    type: "workshop",
     status: "published",
     pdf: "https://dl.acm.org/doi/abs/10.1145/3549035.3561181",
     abstract: "This work presents a methodology for analyzing software repositories to identify patterns in the co-evolution of attacks and defenses."
@@ -191,60 +191,18 @@ function PublicationCard({ pub }: { pub: Publication }) {
 }
 
 export default function Publications() {
-  const journalPubs = publications.filter(p => p.type === "journal");
-  const conferencePubs = publications.filter(p => p.type === "conference");
-  const preprintPubs = publications.filter(p => p.type === "preprint");
-  const workshopPubs = publications.filter(p => p.type === "workshop");
+  // Sort all publications by year (most recent first)
+  const sortedPublications = [...publications].sort((a, b) => b.year - a.year);
 
   return (
     <section>
       <h1 className="mb-8 text-2xl font-medium">Publications</h1>
       
-      {journalPubs.length > 0 && (
-        <div className="mb-8">
-          <h2 className="text-xl font-medium mb-4">Journal Articles</h2>
-          <div className="space-y-4">
-            {journalPubs.map((pub, index) => (
-              <PublicationCard key={index} pub={pub} />
-            ))}
-          </div>
-        </div>
-      )}
-
-      {conferencePubs.length > 0 && (
-        <div className="mb-8">
-          <h2 className="text-xl font-medium mb-4">Conference Papers</h2>
-          <div className="space-y-4">
-            {conferencePubs.map((pub, index) => (
-              <PublicationCard key={index} pub={pub} />
-            ))}
-          </div>
-        </div>
-      )}
-
-      {preprintPubs.length > 0 && (
-        <div className="mb-8">
-          <h2 className="text-xl font-medium mb-4">Preprints</h2>
-          <div className="space-y-4">
-            {preprintPubs.map((pub, index) => (
-              <PublicationCard key={index} pub={pub} />
-            ))}
-          </div>
-        </div>
-      )}
-
-      {workshopPubs.length > 0 && (
-        <div className="mb-8">
-          <h2 className="text-xl font-medium mb-4">Workshop Papers</h2>
-          <div className="space-y-4">
-            {workshopPubs.map((pub, index) => (
-              <PublicationCard key={index} pub={pub} />
-            ))}
-          </div>
-        </div>
-      )}
-
-      
+      <div className="space-y-4">
+        {sortedPublications.map((pub, index) => (
+          <PublicationCard key={index} pub={pub} />
+        ))}
+      </div>
     </section>
   );
 } 

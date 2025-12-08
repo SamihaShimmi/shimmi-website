@@ -91,10 +91,9 @@ const publications = [
   {
     title: "Process-based Indicators of Vulnerability Re-Introducing Code Changes: An Exploratory Case Study",
     authors: ["Samiha Shimmi", "Nicholas M Synovic", "Mona Rahimi", "George K Thiruvathukal"],
-    venue: "arXiv preprint arXiv:2510.26676",
-    year: 2025,
-    type: "preprint",
-    arxiv: "https://arxiv.org/pdf/2510.26676"
+    venue: "The International Workshop on Software Vulnerability Management (SVM) 2026",
+    year: 2026,
+    type: "workshop"
   },
   {
     title: "AI-Based Software Vulnerability Detection: A Systematic Literature Review",
@@ -109,7 +108,7 @@ const publications = [
     authors: ["Hibah Mohammed Ghouse", "Samiha Shimmi", "Mona Rahimi"],
     venue: "Proceedings of the 6th International Workshop on Engineering and Cybersecurity of Critical Systems (EnCyCriS) @ ICSE 2025",
     year: 2025,
-    type: "publication",
+    type: "workshop",
     pdf: "https://ieeexplore.ieee.org/document/11029526/"
   },
   {
@@ -405,11 +404,6 @@ export default function CV() {
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
                 <strong>Venue:</strong> {pub.venue}
               </p>
-              {pub.type && (
-                <span className="inline-block text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded mr-2">
-                  {pub.type}
-                </span>
-              )}
               <div className="flex gap-2 mt-2">
                 {pub.arxiv && (
                   <a
