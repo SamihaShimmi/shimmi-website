@@ -122,9 +122,23 @@ export default function Page() {
 
         <div className="prose prose-lg prose-neutral dark:prose-invert max-w-none space-y-4">
           <p className="text-lg leading-relaxed">
-            I am a Ph.D. candidate in <span className="font-semibold text-slate-700 dark:text-slate-300">Computer Science</span> at
-            <span className="font-semibold text-indigo-700 dark:text-indigo-400"> Northern Illinois University</span>, advised by
-            <span className="font-semibold text-slate-700 dark:text-slate-300"> Dr. Mona Rahimi</span>, conducting my research within the Reliable AI-enabled Software Engineering Laboratory (RAISE).
+            I am a Ph.D. candidate in <span className="font-semibold text-slate-700 dark:text-slate-300">Computer Science</span> at{" "}
+            <a 
+              href="https://www.niu.edu/index.shtml" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="!font-semibold !text-indigo-700 dark:!text-indigo-400 !no-underline"
+            >
+              Northern Illinois University
+            </a>, advised by{" "}
+            <a 
+              href="https://faculty.cs.niu.edu/~rahimi/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="!font-semibold !text-indigo-700 dark:!text-indigo-400 !no-underline"
+            >
+              Dr. Mona Rahimi
+            </a>, conducting my research within the Reliable AI-enabled Software Engineering Laboratory (RAISE).
           </p>
           <p className="text-lg leading-relaxed">
             My research investigates how security vulnerabilities and their fixes co-evolve over time, uncovering patterns that predict future attacks.
